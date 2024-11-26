@@ -1,0 +1,267 @@
+/* Reset gaya dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header, section{
+    flex: 1;
+}
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1em;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e74c3c;
+}
+/* Profil Section */
+#profil {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+.profile-container p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.profile-container p strong {
+    color: #34495e;
+}
+
+.education {
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+
+.education input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Profil Section */
+#home {
+    padding: 3em 2em;
+    text-align: center;
+    background-color: #fff;
+    max-width: 900px;
+    margin: 2em auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#home h2 {
+    font-size: 2.5em;
+    color: #34495e;
+    margin-bottom: 1em;
+}
+
+#home p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+/* Gambar Profil */
+.profile-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.profile-image {
+    width: 200px; /* Ukuran gambar yang sedang */
+    height: 250px; /* Ukuran gambar yang sedang */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    object-fit: cover; /* Agar gambar tetap proporsional */
+}
+
+/* Kontak Section */
+#kontak {
+    padding: 3em 2em;
+    background-color: #fff;
+    max-width: 900px;
+    margin: 2em auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#kontak h2 {
+    font-size: 2.5em;
+    color: #34495e;
+    margin-bottom: 1em;
+}
+
+#kontak p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+/* Form Styling */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.form-group input[type="submit"] {
+    background-color: #2c3e50;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 1em;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #e74c3c;
+}
+
+/* Galeri Styling */
+#galeri {
+    padding: 3em 2em;
+    background-color: #fff;
+    margin: 2em auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#galeri h2 {
+    font-size: 2.5em;
+    color: #34495e;
+    margin-bottom: 1em;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Jika ukuran layar kecil, gambar bisa pindah ke baris baru */
+}
+
+.gallery img {
+    width: 150px; /* Ukuran gambar sedang */
+    height: 150px; /* Ukuran gambar sedang */
+    border-radius: 8px; /* Agar sudut gambar lebih halus */
+    object-fit: cover; /* Membuat gambar tetap proporsional */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 3em;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #home, #kontak, #galeri {
+        padding: 2em;
+    }
+
+    .profile-image {
+        width: 120px; /* Lebih kecil di layar kecil */
+        height: 120px; /* Lebih kecil di layar kecil */
+    }
+
+    .gallery img {
+        width: 120px; /* Lebih kecil di layar kecil */
+        height: 120px; /* Lebih kecil di layar kecil */
+    }
+}
